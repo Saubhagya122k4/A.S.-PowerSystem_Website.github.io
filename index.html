@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HERE THE CSS GIVEN -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HERE THE CSS STYLESHEET IS GIVEN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title> A.S. Power System</title>
+</head>
+
+<body class="bg-black">
+    <!-- PAGE LODING DIV IS GIVEN HERE -->
+    <!-- <div id="loader" class="center">
+        <span></span>
+        <h3 id="loading">Loading...</h3>
+    </div> -->
+
+
+    <!-- THE SCROLLTOTOP BUTTON HTML GIVEN HERE -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b>Top</b></button>
+
+
+
+    <!-- FROM HERE NAVBAR STARTED -->
+
+    <header class="text-purple-600 bg-gray-800">
+        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+
+            <!-- HERE NAVBAR LOGO IS STARTED -->
+
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-2">
+                <svg class="fill-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="56" height="56"
+                    viewBox="0 0 172 172">
+                    <g class="mix-blend-normal" fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <path
+                            d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                            fill="#ff5540"></path>
+                        <g fill="#000000">
+                            <path
+                                d="M54.2144,28.122c-6.27766,0 -7.9464,6.93986 -7.9464,10.5952v2.6488h-2.6488v5.2976h2.6488v5.2976h-2.6488v5.2976h2.6488v5.2976h-2.6488v5.2976h2.6488v5.2976h-7.9464v5.2976h5.2976v58.2736h84.7616v-58.2736h5.2976v-5.2976h-7.9464v-5.2976h2.6488v-5.2976h-2.6488v-5.2976h2.6488v-5.2976h-2.6488v-5.2976h2.6488v-5.2976h-2.6488v-2.6488c0,-3.65534 -1.66874,-10.5952 -7.9464,-10.5952c-6.27766,0 -7.9464,6.93986 -7.9464,10.5952v2.6488h-2.6488v5.2976h2.6488v5.2976h-2.6488v5.2976h2.6488v5.2976h-2.6488v5.2976h2.6488v5.2976h-15.8928v-5.2976h2.6488v-5.2976h-2.6488v-5.2976h2.6488v-5.2976h-2.6488v-5.2976h2.6488v-5.2976h-2.6488v-2.6488c0,-3.65534 -1.66874,-10.5952 -7.9464,-10.5952c-6.27766,0 -7.9464,6.93986 -7.9464,10.5952v2.6488h-2.6488v5.2976h2.6488v5.2976h-2.6488v5.2976h2.6488v5.2976h-2.6488v5.2976h2.6488v5.2976h-15.8928v-5.2976h2.6488v-5.2976h-2.6488v-5.2976h2.6488v-5.2976h-2.6488v-5.2976h2.6488v-5.2976h-2.6488v-2.6488c0,-3.65534 -1.66874,-10.5952 -7.9464,-10.5952zM27.7264,83.7468v47.6784h10.5952v-47.6784zM56.8632,83.7468h5.2976v45.0296h-5.2976zM67.4584,83.7468h5.2976v45.0296h-5.2976zM78.0536,83.7468h5.2976v45.0296h-5.2976zM88.6488,83.7468h5.2976v45.0296h-5.2976zM99.244,83.7468h5.2976v45.0296h-5.2976zM109.8392,83.7468h5.2976v45.0296h-5.2976zM133.6784,83.7468v47.6784h10.5952v-47.6784zM51.5656,142.0204v5.2976h5.2976v-5.2976zM62.1608,142.0204v5.2976h5.2976v-5.2976zM104.5416,142.0204v5.2976h5.2976v-5.2976zM115.1368,142.0204v5.2976h5.2976v-5.2976z">
+                            </path>
+                        </g>
+                        <path
+                            d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                            fill="none"></path>
+                        <path
+                            d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+                            fill="none"></path>
+                    </g>
+                </svg>
+
+                <!-- HERE THE COMPANY NAME IS GIVEN -->
+
+                <span class="ml-3 text-xl text-gray-200"><b>A.S. Power System</b></span>
+            </a>
+
+            <!-- HERE NAVBAR LOGO AND COMPANY NAME ENDED -->
+            <!-- HERE THE NVBAR LINK ARE STARTED -->
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="#index.html" class="mr-5 hover:text-gray-200"><b>Home</b></a>
+                <a href="#Contact" class="mr-5 hover:text-gray-200"><b>Contact Us</b></a>
+                <a href="#Product" class="mr-5 hover:text-gray-200"><b>Product</b></a>
+                <a href="#Feedback" class="mr-5 hover:text-gray-200"><b>Feedback</b></a>
+                <a href="#About" class="mr-5 hover:text-gray-200"><b>About</b></a>
+            </nav>
+            <!-- HERE THE NAVBAR LINK IS OVER -->
+        </div>
+    </header>
+
+    <!-- FROM HERE THE PROFILE IS STARTED -->
+
+    <section class="text-gray-600 bg-gray-900">
+        <section class="text-gray-600">
+            <div class="px-5 py-19 md:px-16 mx-0 lg:mx-auto flex flex-col">
+                <div class="lg:w-4/6 mx-auto">
+                    <!-- HERE THE IMAGE BLOCK CODE IS STARTED -->
+                    <div class="rounded-lg h-90 overflow-hidden mt-5">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://source.unsplash.com/1200x500/?Power Line, Electricity">
+                    </div>
+                    <!-- HERE THE IMAGE BLOCK CODE IS OVER -->
+                    <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch lg:justify-normal lg:items-stretch gap-4 mt-10">
+
+                        <div class="w-3/4 md:w-3/5 lg:w-2/5">
+                            <div class="text-center h-full w-full rounded-lg border-4 border-gray-100 flex flex-col items-center justify-center"
+                                id="profile">
+                                <div class="w-20 h-20 rounded-full mt-2">
+                                    <img alt="profil"
+                                        src="https://images.unsplash.com/photo-1624629769948-1eec367b8e64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
+                                        class="mx-auto object-cover rounded-full h-20 w-20 border-4 border-gray-900 filter brightness-[120%] contrast-[1.4]" />
+                                </div>
+                                <div class="flex flex-col items-center text-center justify-center">
+                                    <h2 class="font-medium title-font mt-2 text-gray-200 text-lg">Arun Kumar</h2>
+                                    <div class="w-12 h-1 bg-gray-900 rounded mt- mb-"></div>
+                                    <p class="text-base text-blue-900 mb-5"><b>(Owner)</b></p>
+                                    <div class="flex justify-center">
+                                        <button
+                                            onclick="window.open('https://www.facebook.com/profile.php?id=100008000054030', '_blank')"
+                                            class="inline-flex text-gray-100 border border-black bg-purple-700 py-2 px-6 focus:outline-none hover:bg-purple-500 hover:text-gray-950 rounded text-md mb-2"><b>Profile</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="w-full md:w-3/5">
+                            <div
+                                class="border-gray-200 border-t lg:border-t-0 lg:border-l-2 pt-4 mt-0 text-center md:text-justify">
+                                <h1 class="title-font text-center lg:text-left text-xl lg:text-3xl mb-3 ml-0 lg:ml-3 font-medium text-gray-100"><b>Welcome to
+                                        A.S. Power System</b></h1>
+                                <h4 class="ml-0 lg:ml-3 font-medium text-center lg:text-left text-base lg:text-lg text-gray-200"> Manufacturer of
+                                    transformer,
+                                    servo stabilizer & servo voltage stabilizer from Delhi.
+                                </h4>
+                                <p class="ml-0 lg:ml-3 leading-relaxed text-justify text-sm lg:text-lg"><b>"A network of electrical components hooked
+                                        together,
+                                        and used to supply, or transmit, electricity to a designated device or area is
+                                        the
+                                        definition of electrical power systems. There are large
+                                        networks that provide electricity for large regions that are known as a grid.
+                                        The
+                                        grid can then be divided into the different generators that supply the actual
+                                        current. Electrical Power Systems and Grids On the large electrical
+                                        power systems, it takes generators"</b></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- FROM HERE ABOUT US STARTED -->
+
+        <section class="text-gray-600 bg-gray-900">
+            <div class="container px-5 py-9 md:px-16 mx-auto mb-9">
+                <div class="flex flex-col text-center w-full mt-2">
+                    <h1 class="text-lg md:text-3xl font-medium title-font text-gray-200"><a name="About"><b>About Us</b></a></h1>
+                </div>
+                <div class="flex mt-1 justify-center mb-14">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                </div>
+
+
+                <div class="flex flex-col md:flex-row justify-evenly items-center gap-5">
+
+                    <!-- FROM HERE FIRST ABOUT US SECTION STARTED -->
+
+                    <div class="flex bg-gray-100 justify-center items-center md:items-stretch rounded-lg w-7/12 md:w-3/12">
+                        <div class="flex flex-col justify-center items-center p-3">
+                            <div class="flex flex-col lg:flex-row gap-3 text-center lg:text-right justify-center lg:justify-normal items-center">
+                                <div
+                                    class="inline-flex items-center justify-center flex-shrink-0">
+                                    <svg class="fill-black w-10 h-10 md:w-11 md:h-11 lg:w-14 lg:h-14" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172">
+                                        <defs>
+                                            <linearGradient x1="86" y1="52.02707" x2="86" y2="62.03043"
+                                                gradientUnits="userSpaceOnUse" id="color-1_44840_gr1">
+                                                <stop offset="0" stop-color="#8ab4ff"></stop>
+                                                <stop offset="1" stop-color="#e492ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="86" y1="30.47246" x2="86" y2="142.22285"
+                                                gradientUnits="userSpaceOnUse" id="color-2_44840_gr2">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="86" y1="30.47246" x2="86" y2="142.22285"
+                                                gradientUnits="userSpaceOnUse" id="color-3_44840_gr3">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <g class="mix-blend-normal" fill="none" fill-rule="nonzero" stroke="none"
+                                            stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                            font-family="none" font-weight="none" font-size="none" text-anchor="none">
+                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="#000000"></path>
+                                            <g>
+                                                <path
+                                                    d="M86,52.89c-2.28577,0 -4.13875,1.85298 -4.13875,4.13875c0,2.28577 1.85298,4.13875 4.13875,4.13875c2.28577,0 4.13875,-1.85298 4.13875,-4.13875c0,-2.28577 -1.85298,-4.13875 -4.13875,-4.13875z"
+                                                    fill="url(#color-1_44840_gr1)"></path>
+                                                <path
+                                                    d="M127.59444,61.451c1.14643,-1.12574 1.86244,-2.69019 1.86244,-4.42225c0,-3.42275 -2.78538,-6.20813 -6.20813,-6.20813h-26.51283c-1.81898,-3.1351 -4.96443,-5.39486 -8.66654,-6.02188v-4.32499h-4.13875v4.32499c-3.70211,0.62495 -6.84756,2.88678 -8.66654,6.02188h-26.51283c-3.42275,0 -6.20813,2.78538 -6.20813,6.20813c0,1.73 0.716,3.29444 1.86244,4.42225l-12.20931,26.15897v0.4594v4.13875c0,9.12801 7.42699,16.555 16.555,16.555c9.12801,0 16.555,-7.42699 16.555,-16.555v-4.13875v-0.4594l-11.37535,-24.3731h21.33112c1.08849,1.87692 2.65087,3.4393 4.52779,4.52779v43.06783h-4.13875c-3.42275,0 -6.20813,2.78538 -6.20813,6.20813v2.06937h-4.13875c-3.42275,0 -6.20812,2.78538 -6.20812,6.20813v14.48563h53.80375v-14.48562c0,-3.42275 -2.78538,-6.20813 -6.20813,-6.20813h-4.13875v-2.06937c0,-3.42275 -2.78538,-6.20813 -6.20813,-6.20813h-4.13875v-43.06783c1.87692,-1.08849 3.4393,-2.65294 4.52779,-4.52779h21.33112l-11.37122,24.3731v0.4594v4.13875c0,9.12801 7.42699,16.555 16.555,16.555c9.12801,0 16.555,-7.42699 16.555,-16.555v-4.13875v-0.4594zM48.75125,54.95937c1.14229,0 2.06938,0.92708 2.06938,2.06938c0,1.14229 -0.92708,2.06938 -2.06938,2.06938c-1.14229,0 -2.06938,-0.92708 -2.06938,-2.06938c0,-1.1423 0.92708,-2.06938 2.06938,-2.06938zM48.75125,104.62438c-6.84756,0 -12.41625,-5.56869 -12.41625,-12.41625h24.8325c0,6.84756 -5.56869,12.41625 -12.41625,12.41625zM60.95229,88.06938h-24.40207l11.61747,-24.89044c0.19452,0.01655 0.38283,0.05794 0.58356,0.05794h0.61254zM54.57861,59.09813c0.23177,-0.64978 0.38077,-1.33889 0.38077,-2.06938c0,-0.73049 -0.14899,-1.41959 -0.38077,-2.06938h19.19345c-0.11588,0.67462 -0.18831,1.36372 -0.18831,2.06938c0,0.70566 0.07243,1.39476 0.18624,2.06938zM88.06938,102.555h-4.13875v-4.13875h4.13875zM88.06938,94.2775h-4.13875v-4.13875h4.13875zM98.41625,135.665h-24.8325v-4.13875h24.8325zM106.69375,123.24875c1.14229,0 2.06937,0.92708 2.06937,2.06938v10.34688h-6.20812v-5.1962c0,-1.69896 -1.38234,-3.0813 -3.0813,-3.0813h-26.9474c-1.69896,0 -3.0813,1.38234 -3.0813,3.0813v5.1962h-6.20812v-10.34688c0,-1.1423 0.92708,-2.06938 2.06937,-2.06938h4.13875h33.11zM98.41625,117.04063v2.06937h-24.8325v-2.06937c0,-1.14229 0.92708,-2.06938 2.06937,-2.06938h20.69375c1.14229,0 2.06938,0.92708 2.06938,2.06938zM83.93063,110.8325v-4.13875h4.13875v4.13875zM88.06938,86h-4.13875v-16.74124c0.67462,0.11382 1.36372,0.18624 2.06938,0.18624c0.70566,0 1.39476,-0.07243 2.06937,-0.18624zM86,65.30625c-4.56504,0 -8.2775,-3.71246 -8.2775,-8.2775c0,-4.56504 3.71246,-8.2775 8.2775,-8.2775c4.56504,0 8.2775,3.71246 8.2775,8.2775c0,4.56504 -3.71246,8.2775 -8.2775,8.2775zM125.31813,57.02875c0,1.14229 -0.92708,2.06938 -2.06938,2.06938c-1.14229,0 -2.06937,-0.92708 -2.06937,-2.06938c0,-1.1423 0.92708,-2.06938 2.06937,-2.06938c1.1423,0 2.06938,0.92708 2.06938,2.06938zM98.23001,54.95937h19.19345c-0.23384,0.64978 -0.38283,1.33889 -0.38283,2.06938c0,0.73049 0.14899,1.41959 0.38076,2.06938h-19.19138c0.11382,-0.67462 0.18624,-1.36372 0.18624,-2.06938c0,-0.70566 -0.07243,-1.39476 -0.18624,-2.06938zM123.24875,104.62438c-6.84756,0 -12.41625,-5.56869 -12.41625,-12.41625h24.8325c0,6.84756 -5.56869,12.41625 -12.41625,12.41625zM111.04772,88.06938l11.5885,-24.8325h0.61253c0.20073,0 0.38904,-0.04139 0.58563,-0.05794l11.6154,24.89044z"
+                                                    fill="url(#color-2_44840_gr2)"></path>
+                                                <path
+                                                    d="M86,36.335c2.28252,0 4.13875,1.85623 4.13875,4.13875h4.13875c0,-4.56504 -3.71246,-8.2775 -8.2775,-8.2775c-4.56504,0 -8.2775,3.71246 -8.2775,8.2775h4.13875c0,-2.28252 1.85623,-4.13875 4.13875,-4.13875z"
+                                                    fill="url(#color-3_44840_gr3)"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <h2 class="text-gray-900 text-base lg:text-xl font-medium"><b>Legal Status of Firm</b>
+                                    </h2>
+                                </div>
+                                
+                            </div>
+
+
+                            <div>
+                                <p class="leading-relaxed text-xs lg:text-base text-gray-700"> <b>Individual - Proprietor</b> </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- FROM HERE SECOND ABOUT US SECTION STARTED -->
+
+                    <div class="flex bg-gray-100 justify-center items-center md:items-stretch rounded-lg w-7/12 md:w-3/12">
+                        <div class="flex flex-col justify-center items-center p-3">
+                            <div class="flex flex-col lg:flex-row gap-3 text-center lg:text-right justify-center lg:justify-normal items-center">
+                                <div
+                                    class="inline-flex items-center justify-center flex-shrink-0">
+                                    <svg class="fill-black w-10 h-10 md:w-11 md:h-11 lg:w-14 lg:h-14" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172">
+                                        <defs>
+                                            <linearGradient x1="100.48563" y1="27.43907" x2="100.48563" y2="138.4093"
+                                                gradientUnits="userSpaceOnUse" id="color-1_82650_gr1">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="86" y1="28.65586" x2="86" y2="138.4093"
+                                                gradientUnits="userSpaceOnUse" id="color-2_82650_gr2">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="96.34688" y1="34.33629" x2="96.34688" y2="81.3049"
+                                                gradientUnits="userSpaceOnUse" id="color-3_82650_gr3">
+                                                <stop offset="0" stop-color="#8ab4ff"></stop>
+                                                <stop offset="1" stop-color="#e492ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="96.34688" y1="29.07801" x2="96.34688" y2="138.03267"
+                                                gradientUnits="userSpaceOnUse" id="color-4_82650_gr4">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <g class="mix-blend-normal" fill="none" fill-rule="nonzero" stroke="none"
+                                            stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                            font-family="none" font-weight="none" font-size="none" text-anchor="none">
+                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="#000000"></path>
+                                            <g id="original-icon">
+                                                <path
+                                                    d="M104.62438,27.43907h-8.2775c-17.1158,0 -31.04063,13.92482 -31.04063,31.04063c0,16.48878 12.92946,29.9749 29.17819,30.94543v0.09519h10.13994c17.1158,0 31.04063,-13.92482 31.04063,-31.04063c0,-17.1158 -13.92482,-31.04063 -31.04063,-31.04063zM127.28196,60.54907h4.13875c-0.22349,2.91161 -0.8919,5.69699 -1.97004,8.2775h-3.87387c0.92915,-2.61776 1.51478,-5.39072 1.70516,-8.2775zM127.28196,56.41032c-0.19245,-2.88678 -0.77602,-5.65974 -1.70516,-8.2775h3.87387c1.08021,2.58051 1.74655,5.36589 1.97004,8.2775zM127.25713,43.99407h-3.47655c-2.17284,-4.09943 -5.24794,-7.63599 -8.94591,-10.39033c5.12998,2.11283 9.45497,5.77149 12.42246,10.39033zM69.445,58.47969c0,-14.83328 12.0686,-26.90188 26.90188,-26.90188c14.83328,0 26.90188,12.0686 26.90188,26.90188c0,14.83328 -12.0686,26.90188 -26.90188,26.90188c-14.83328,0 -26.90188,-12.0686 -26.90188,-26.90188zM114.83467,83.35565c3.6959,-2.75434 6.77306,-6.2909 8.94591,-10.39033h3.47655c-2.96748,4.61884 -7.29248,8.2775 -12.42246,10.39033z"
+                                                    fill="url(#color-1_82650_gr1)"></path>
+                                                <path
+                                                    d="M136.54448,99.49884c-1.94107,-1.44029 -4.53607,-1.86037 -7.11037,-1.14643l-31.6304,8.7369c0.38697,-0.95605 0.61047,-1.99488 0.61047,-3.08958c0,-4.5609 -3.71246,-8.27129 -8.27543,-8.27129h-19.40039c-1.38027,-2.06937 -4.88993,-8.2775 -9.56465,-8.2775h-8.28371v-2.06937c0,-3.42688 -2.77089,-6.20813 -6.19985,-6.20813h-8.27543c-3.42688,0 -6.21847,2.78124 -6.21847,6.20813v35.1711c0,3.42895 2.79159,6.2164 6.21847,6.2164h8.27543c3.42895,0 6.19985,-2.78745 6.19985,-6.2164v-1.54996l25.12014,16.97301c3.15373,2.13559 6.8248,3.20753 10.50415,3.20753c3.39378,0 6.7979,-0.91259 9.80884,-2.75227l37.60468,-22.96592c2.38599,-1.45477 3.87594,-4.09736 3.87594,-6.89516v-0.64358c0,-2.55154 -1.19196,-4.89407 -3.25927,-6.42748zM48.75125,120.56094c0,1.14229 -0.92708,2.06937 -2.06938,2.06937h-8.2775c-1.14229,0 -2.06937,-0.92708 -2.06937,-2.06937v-35.17938c0,-1.14229 0.92708,-2.06938 2.06937,-2.06938h8.2775c1.1423,0 2.06938,0.92708 2.06938,2.06938zM135.665,106.5699c0,1.36579 -0.72842,2.65501 -1.89555,3.36687l-37.60261,22.96592c-4.88993,2.99025 -11.10634,2.84746 -15.839,-0.35179l-27.43784,-18.53746v-22.42375h8.28371c2.19147,0 5.10722,4.20911 6.38816,7.0545l0.54838,1.223h22.0285c2.28045,0 4.13875,1.85416 4.13875,4.13047c0,2.28459 -1.85623,4.14703 -4.13875,4.14703h-10.34481h-10.34894v4.13875h10.34894h10.34481h4.13875l36.25752,-9.94128c1.32026,-0.36628 2.6488,-0.18624 3.54277,0.47803c1.00572,0.74704 1.58721,1.87692 1.58721,3.10406z"
+                                                    fill="url(#color-2_82650_gr2)"></path>
+                                                <path
+                                                    d="M96.34688,81.24282c-12.55076,0 -22.76312,-10.21237 -22.76312,-22.76312h4.13875c0,10.27031 8.35407,18.62438 18.62438,18.62438c10.27031,0 18.62438,-8.35407 18.62438,-18.62437c0,-10.27031 -8.35407,-18.62437 -18.62437,-18.62437v-4.13875c12.55076,0 22.76313,10.21237 22.76313,22.76313c0,12.55076 -10.21237,22.76313 -22.76312,22.76313z"
+                                                    fill="url(#color-3_82650_gr3)"></path>
+                                                <path
+                                                    d="M102.555,64.68782h-4.13875v-16.555h-8.2775v4.13875h4.13875v12.41625h-4.13875v4.13875h12.41625z"
+                                                    fill="url(#color-4_82650_gr4)"></path>
+                                            </g>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,165.12c-43.69677,0 -79.12,-35.42323 -79.12,-79.12v0c0,-43.69677 35.42323,-79.12 79.12,-79.12v0c43.69677,0 79.12,35.42323 79.12,79.12v0c0,43.69677 -35.42323,79.12 -79.12,79.12z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,161.68c-41.79691,0 -75.68,-33.88309 -75.68,-75.68v0c0,-41.79691 33.88309,-75.68 75.68,-75.68v0c41.79691,0 75.68,33.88309 75.68,75.68v0c0,41.79691 -33.88309,75.68 -75.68,75.68z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,158.24c-39.89705,0 -72.24,-32.34295 -72.24,-72.24v0c0,-39.89705 32.34295,-72.24 72.24,-72.24h0c39.89705,0 72.24,32.34295 72.24,72.24v0c0,39.89705 -32.34295,72.24 -72.24,72.24z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,154.8c-37.99719,0 -68.8,-30.80281 -68.8,-68.8v0c0,-37.99719 30.80281,-68.8 68.8,-68.8h0c37.99719,0 68.8,30.80281 68.8,68.8v0c0,37.99719 -30.80281,68.8 -68.8,68.8z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,151.36c-36.09733,0 -65.36,-29.26267 -65.36,-65.36v0c0,-36.09733 29.26267,-65.36 65.36,-65.36h0c36.09733,0 65.36,29.26267 65.36,65.36v0c0,36.09733 -29.26267,65.36 -65.36,65.36z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,165.12c-43.69677,0 -79.12,-35.42323 -79.12,-79.12v0c0,-43.69677 35.42323,-79.12 79.12,-79.12v0c43.69677,0 79.12,35.42323 79.12,79.12v0c0,43.69677 -35.42323,79.12 -79.12,79.12z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,165.12c-43.69677,0 -79.12,-35.42323 -79.12,-79.12v0c0,-43.69677 35.42323,-79.12 79.12,-79.12v0c43.69677,0 79.12,35.42323 79.12,79.12v0c0,43.69677 -35.42323,79.12 -79.12,79.12z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,165.12c-43.69677,0 -79.12,-35.42323 -79.12,-79.12v0c0,-43.69677 35.42323,-79.12 79.12,-79.12v0c43.69677,0 79.12,35.42323 79.12,79.12v0c0,43.69677 -35.42323,79.12 -79.12,79.12z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,165.12c-43.69677,0 -79.12,-35.42323 -79.12,-79.12v0c0,-43.69677 35.42323,-79.12 79.12,-79.12v0c43.69677,0 79.12,35.42323 79.12,79.12v0c0,43.69677 -35.42323,79.12 -79.12,79.12z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="none"></path>
+                                            <path
+                                                d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+                                                fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <h2 class="text-gray-900 text-base lg:text-xl font-medium"><b>Nature of Business</b></h2>
+                                </div>
+                                
+                            </div>
+
+
+                            <div>
+                                <p class="leading-relaxed text-xs lg:text-base text-gray-700"><b>Manufacturer</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- FROM HERE THIRD ABOUT US SECTION STARTED -->
+
+                    <div class="flex bg-gray-100 justify-center items-center rounded-lg w-7/12 md:w-3/12">
+                        <div class="flex flex-col justify-center items-center py-3 md:py-6 lg:py-3">
+                            <div class="flex flex-col lg:flex-row gap-3 text-center lg:text-right justify-center lg:justify-normal items-center">
+                                <div
+                                    class="inline-flex items-center justify-center flex-shrink-0">
+                                    <svg class="fill-black w-10 h-10 md:w-11 md:h-11 lg:w-14 lg:h-14" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172">
+                                        <defs>
+                                            <linearGradient x1="73.2289" y1="48.81921" x2="73.2289" y2="60.88577"
+                                                gradientUnits="userSpaceOnUse" id="color-1_L06xtIstZ632_gr1">
+                                                <stop offset="0" stop-color="#8ab4ff"></stop>
+                                                <stop offset="1" stop-color="#e492ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="73.2289" y1="31.42923" x2="73.2289" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-2_L06xtIstZ632_gr2">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="73.2289" y1="31.42923" x2="73.2289" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-3_L06xtIstZ632_gr3">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="73.2289" y1="31.42923" x2="73.2289" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-4_L06xtIstZ632_gr4">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="56.20077" y1="31.42923" x2="56.20077" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-5_L06xtIstZ632_gr5">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="64.71483" y1="31.42923" x2="64.71483" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-6_L06xtIstZ632_gr6">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="73.2289" y1="31.42923" x2="73.2289" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-7_L06xtIstZ632_gr7">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="86" y1="31.42923" x2="86" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-8_L06xtIstZ632_gr8">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                            <linearGradient x1="121.12053" y1="31.42923" x2="121.12053" y2="132.06124"
+                                                gradientUnits="userSpaceOnUse" id="color-9_L06xtIstZ632_gr9">
+                                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                                <stop offset="1" stop-color="#c822ff"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <g class="mix-blend-normal" fill="none" fill-rule="nonzero" stroke="none"
+                                            stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                            font-family="none" font-weight="none" font-size="none" text-anchor="none">
+                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                            <path
+                                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                                fill="#000000"></path>
+                                            <g>
+                                                <path
+                                                    d="M56.09221,60.45794h34.27551c1.11321,0 2.01783,-0.90462 2.01783,-2.01996v-4.47627c0,-1.11321 -0.90462,-2.01783 -2.01996,-2.01783h-34.27338c-1.11534,0 -2.01996,0.90462 -2.01996,2.01996v4.47627c0,1.11321 0.90462,2.01783 2.01996,2.01783z"
+                                                    fill="url(#color-1_L06xtIstZ632_gr1)"></path>
+                                                <rect x="25.40372" y="31.40379" transform="scale(2.12852,2.12852)"
+                                                    width="18" height="2" fill="url(#color-2_L06xtIstZ632_gr2)"></rect>
+                                                <rect x="25.40372" y="36.40379" transform="scale(2.12852,2.12852)"
+                                                    width="18" height="2" fill="url(#color-3_L06xtIstZ632_gr3)"></rect>
+                                                <rect x="25.40372" y="41.40379" transform="scale(2.12852,2.12852)"
+                                                    width="18" height="2" fill="url(#color-4_L06xtIstZ632_gr4)"></rect>
+                                                <rect x="25.40372" y="47.40379" transform="scale(2.12852,2.12852)"
+                                                    width="2" height="3" fill="url(#color-5_L06xtIstZ632_gr5)"></rect>
+                                                <rect x="29.40372" y="47.40379" transform="scale(2.12852,2.12852)"
+                                                    width="2" height="3" fill="url(#color-6_L06xtIstZ632_gr6)"></rect>
+                                                <rect x="33.40372" y="47.40379" transform="scale(2.12852,2.12852)"
+                                                    width="2" height="3" fill="url(#color-7_L06xtIstZ632_gr7)"></rect>
+                                                <path
+                                                    d="M141.34144,86.00014c0,-9.51234 -6.27274,-17.58581 -14.89962,-20.30392v-28.31779c0,-1.73048 -1.0302,-3.28004 -2.62446,-3.93988c-1.58149,-0.65771 -3.39286,-0.30438 -4.6125,0.91101l-3.18852,3.18426l-5.37238,-3.92286c-1.49848,-1.09831 -3.51418,-1.10044 -5.01266,-0.00213l-5.57671,4.08037l-5.58523,-4.07824c-1.49635,-1.09831 -3.51205,-1.10044 -5.01266,-0.00213l-5.57671,4.08037l-5.58736,-4.07824c-1.49635,-1.09831 -3.51205,-1.10044 -5.01266,-0.00213l-5.57671,4.08037l-5.58523,-4.07824c-1.49635,-1.09831 -3.51205,-1.10044 -5.01266,-0.00213l-5.36599,3.92286l-3.20129,-3.18213c-1.22177,-1.21538 -3.03314,-1.57297 -4.6125,-0.91101c-1.59426,0.65984 -2.62446,2.2094 -2.62446,3.93988v80.55159h-10.64258v10.64258c0,5.86832 4.77639,10.64258 10.64258,10.64258h74.49596c5.86832,-0.00213 10.64471,-4.77639 10.64471,-10.64471v-22.26641c8.62688,-2.71812 14.89962,-10.79158 14.89962,-20.30392zM41.30115,134.95603c-3.52057,0 -6.38555,-2.86498 -6.38555,-6.38555v-6.38555h70.24105v6.38555c0,2.39458 0.79394,4.25703 2.13065,6.38555zM122.18479,128.57048c0,3.52057 -2.86498,6.38555 -6.38555,6.38555c-3.52057,0 -6.38555,-2.86498 -6.38555,-6.38555v-10.64258h-63.8555v-19.15665h-0.00213l-0.01916,-61.40558l3.19703,3.18213c1.48996,1.48145 3.80153,1.65811 5.50434,0.42145l5.36386,-3.92498l5.58736,4.08037c1.50273,1.09619 3.51205,1.09193 5.01053,0l5.57671,-4.08037l5.58949,4.08037c1.5006,1.09406 3.5078,1.09406 5.0084,0l5.57884,-4.08037l5.58736,4.08037c1.50273,1.09619 3.51205,1.09193 5.01053,0l5.57671,-4.08037l5.37663,3.92498c1.69643,1.2388 4.01225,1.06213 5.50222,-0.42145l3.17788,-3.16936v27.4451c-0.70028,-0.07024 -1.40908,-0.10855 -2.12852,-0.10855c-11.73664,0 -21.28517,9.54853 -21.28517,21.28517c0,11.73664 9.54853,21.28517 21.28517,21.28517c0.71944,0 1.42823,-0.03831 2.12852,-0.10855zM120.05627,103.02827c-9.38889,0 -17.02813,-7.63925 -17.02813,-17.02813c0,-9.38889 7.63925,-17.02813 17.02813,-17.02813c9.38889,0 17.02813,7.63925 17.02813,17.02813c0,9.38889 -7.63925,17.02813 -17.02813,17.02813z"
+                                                    fill="url(#color-8_L06xtIstZ632_gr8)"></path>
+                                                <path
+                                                    d="M129.19399,77.48607l-11.26837,11.71748l-4.87856,-5.07438l-3.00972,3.13105l4.87856,5.07438c0.83012,0.86418 1.91992,1.29414 3.01185,1.29414c1.09193,0 2.18173,-0.42996 3.01185,-1.29414l11.26411,-11.71748z"
+                                                    fill="url(#color-9_L06xtIstZ632_gr9)"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <h2 class="text-gray-900 text-base lg:text-xl font-medium"> <b>GST Number</b> </h2>
+                                </div>
+                                
+                            </div>
+
+
+                            <div>
+                                <p class="leading-relaxed text-xs lg:text-base text-gray-700"> <b>01ABCDEFGH254354L1</b> </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FROM HERE THE HOW TO BUY PRODUCT STEPS STARTED -->
+
+        <section class="text-gray-400 bg-gray-900 ">
+            <!-- HERE THE HEADING IS GIVEN -->
+            <div class="flex flex-col text-center w-full">
+                <h1 class="text-lg md:text-3xl font-medium title-font text-gray-200"><a name="About"><b>Steps to Buy
+                            Products</b></a></h1>
+            </div>
+            <div class="flex mt-1 justify-center mb-9">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                </div>
+            <!-- HERE THE HEADING IS OVER -->
+
+
+
+
+
+            <div class="container px-5 py-19 md:px-16 mx-auto flex flex-wrap">
+                <div class="grid grid-flow-row w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full md:py-6">
+
+                        <!-- FROM HERE THE 1ST STEP CODE IS STARTED -->
+
+                        <div class="flex flex-col justify-center items-center gap-2 bg-gray-800 w-full rounded-md relative p-3">
+                            <!-- FROM HERE THE 1ST STEP ICON CODE IS STARTED -->
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"><g id="shopping-bag-hand-bag-price-tag--shopping-bag-purse-goods-item-products"><path id="Union" stroke="#000000" d="m14.18 9.547 0.94 -3.376 3.476 0.442L22 11.737l-4.416 2.934 -3.404 -5.124Z" stroke-width="2"></path><path id="Vector 2477" stroke="#000000" d="M14.334 9.24H3.841L2 21.202h18.406l-1.159 -7.53" stroke-width="2"></path><path id="Vector 2479" stroke="#000000" d="M6.602 9.239v-1.84a4.601 4.601 0 0 1 9.056 -1.158" stroke-width="2"></path></g></svg>
+                            </div>
+                            <!-- HERE THE IST ICON CODE IS OVER -->
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium text-center text-sm text-white mb-1 tracking-wider"><b>STEP 1➟ Product Selection</b></h2>
+                                <p class="leading-relaxed text-justify">To compile your shopping list, please explore our product section by clicking here on <a href="#Product"
+                                        class="hover:text-indigo-500 "><b><u>"Product"</u></b></a> or download our comprehensive booklet by clicking here on <a href="#Product"
+                                        class="hover:text-indigo-500 "><b><u>"Booklet"</u></b></a>.</p>
+                            </div>
+                        </div>
+                        <!-- FROM HERE THE 1ST STEP CODE IS OVER -->
+
+                        <!-- FROM HERE THE 2ND STEP CODE IS STARTED -->
+                        <div class="flex flex-col justify-center items-center gap-2 bg-gray-800 w-full rounded-md relative p-3">
+                            <!-- FROM HERE THE 2ND STEP ICON CODE IS STARTED -->
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"><g id="bullet-list--points-bullet-unordered-list-lists-bullets"><path id="Vector 2098" stroke="#000000" d="M10 4h13" stroke-width="2"></path><path id="Vector 2100" stroke="#000000" d="m10 12 13 0" stroke-width="2"></path><path id="Vector 2099" stroke="#000000" d="M10 20h13" stroke-width="2"></path><path id="Rectangle 946" stroke="#000000" d="M2 2h4v4H2z" stroke-width="2"></path><path id="Rectangle 947" stroke="#000000" d="M2 10h4v4H2z" stroke-width="2"></path><path id="Rectangle 948" stroke="#000000" d="M2 18h4v4H2z" stroke-width="2"></path></g></svg>
+                            </div>
+                            <!-- HERE THE 2ND ICON CODE IS OVER -->
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium text-center text-sm text-white mb-1 tracking-wider"><b>STEP 2➟ Check Out</b></h2>
+                                <p class="leading-relaxed text-justify">Proceed to the <a href="#Contact"
+                                    class="hover:text-indigo-500 "><b><u>"Contact Us"</u></b></a> and Fill the Product Required Form providing necessary details such as shipping address and payment information.</p>
+                            </div>
+                        </div>
+                        <!-- HERE THE 2ND STEP CODE IS OVER -->
+
+                        <!-- HERE THE 3RD STEP CODE IS STARTED -->
+                        <div class="flex flex-col justify-center items-center gap-2 bg-gray-800 w-full rounded-md relative p-3">
+                            <!-- FROM HERE THE 3RD STEP ICON CODE IS STARTED -->
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"><g id="chat-bubble-square-write--messages-message-bubble-chat-square-write-review-pen-pencil-compose"><path id="Rectangle 729" stroke="#000000" d="M14.541 2.5 3 2.5l0 19L7 19l14 0 0 -9.465" stroke-width="2"></path><path id="Vector" stroke="#000000" d="m22 4.89 -7.515 7.516h-2.89v-2.89L19.11 2 22 4.89Z" stroke-width="2"></path></g></svg>
+                                </svg>
+                            </div>
+                            <!-- HERE THE 3RD ICON CODE IS OVER -->
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium text-center text-sm text-white mb-1 tracking-wider"><b>STEP 3➟ Review Order</b></h2>
+                                <p class="leading-relaxed text-justify">Verify the order summary, ensuring the correct products and quantities are listed before confirming the purchase.</p>
+                            </div>
+                        </div>
+                        <!-- HERE HE 3RD STEP CODE IS OVER -->
+
+
+                        <!-- FROM HERE THE 4TH STEP CODE IS STARTED -->
+                        <div class="flex flex-col justify-center items-center gap-2 bg-gray-800 w-full rounded-md relative p-3">
+                            <!-- FROM HERE THE 4TH STEP ICON CODE IS STARTED -->
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                <svg fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                            </div>
+                            <!-- HERE THE 4TH STEP ICON CODE IS OVER -->
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium text-center text-sm text-white mb-1 tracking-wider"><b>Step 4➟ Finish</b></h2>
+                                <p class="leading-relaxed text-justify">Receive an order confirmation, including tracking information and estimated delivery date, concluding the online purchase process.</p>
+                            </div>
+                        </div>
+                        <!-- HERE THE 4TH STEP CODE IS OVER -->
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FROM HERE PRODUCT HTML STARTED-->
+
+        <section class="text-gray-400 bg-gray-900 ">
+            <div class="container px-5 py-20 md:px-16 mx-auto">
+                <div class="flex flex-col text-center w-full">
+                    <h1 class="text-lg md:text-3xl font-medium title-font text-gray-200"><a
+                            name="Product"><b>Product</b></a></h1>
+                </div>
+                <div class="flex mt-1 justify-center mb-9">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/3-phase-power-transformers-500x500.jpg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">3 Phase Power Transformer</h2>
+                            <p class="mt-1">$16.00</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/5-mva-5000-kva-step-down-electrical-power43405175742.jpg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">5 MVA-5000-KVA-Step Down Electrical Power</h2>
+                            <p class="mt-1">$21.15</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/current-transformers-1000x1000.jpeg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">Current Transformers</h2>
+                            <p class="mt-1">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/electrical-transformer-125x125.jpg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">Electrical Transformer</h2>
+                            <p class="mt-1">$18.40</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/industrial-control-transformer-1000x1000.jpeg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">Industrial Control Transformer</h2>
+                            <p class="mt-1">$16.00</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/oil-cooled-transformer-500x500.jpg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">Oil Cooled Transformer</h2>
+                            <p class="mt-1">$21.15</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/Power-Distribution-Transformers.jpeg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white text-base font-medium">Power Distribution Transformers</h2>
+                            <p class="mt-1">$12.00</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded-md overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                                src="images/power-transformers-125x125.jpg">
+                        </a>
+                        <div class="mt-4">
+                            <h2 class="text-white title-font text-lg font-medium">Power Transformers</h2>
+                            <p class="mt-1">$18.40</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FROM HERE CONTACT US STARTED -->
+
+        <!-- HERE ADDRESS HTML IS GIVEN -->
+
+        <section class="text-gray-600 bg-gray-900">
+
+
+            <div class="flex flex-col text-center w-full">
+                <h1 class="text-lg md:text-3xl font-medium title-font text-gray-200"><a name="Contact"><b>Contact
+                            Us</b></a></h1>
+            </div>
+            <div class="flex mt-1 justify-center mb-8 md:mb-14">
+                <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
+
+
+            <div class="px-5 py-19 md:px-16 mx-auto justify-center items-center lg:items-stretch flex flex-col lg:flex-row gap-7 md:flex-nowrap">
+                <div
+                    class="lg:w-2/3 w-full bg-gray-800 rounded-lg overflow-hidden mr-0 p-3 flex items-end justify-center relative">
+                    <iframe class="rounded-lg h-96 lg:h-full" width="100%" height="100%"
+                        class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0"
+                        scrolling="no"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.261797122324!2d77.07284341484912!3d28.711721182386626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0699ea39710d%3A0x4410df4013aeef84!2sJmd%20Overseas!5e0!3m2!1sen!2sin!4v1624330162080!5m2!1sen!2sin"></iframe>
+
+                        <div class="bg-gray-900 w-1/2 lg:w-3/4 gap-2 absolute flex flex-col md:flex-row py-1 md:py-6 rounded shadow-md mb-2 md:mb-10 ">
+                            <div class="w-11/12 md:w-2/3 ml-4 hidden md:block">
+                                <h2 class="title-font font-semibold text-gray-200 tracking-widest text-sm md:text-lg"><b>📍ADDRESS</b>
+                                </h2>
+                                <p class="mt-1 text-gray-400 text-sm text-[9px]"><b>158, Ground Floor, Village Pooth Kalan, Near 12 No.
+                                        Transformer, Rohini, Delhi-110086, India
+                                    </b></p>
+                            </div>
+                            <div class="ml-4 md:ml-0">
+                                <h2 class="title-font font-semibold text-gray-200 tracking-widest text-sm md:text-lg">
+                                    <b>&#9993;EMAIL</b></h2>
+                                <a href="mailto:aspowersystem2017@gmail.com" class="text-indigo-500 leading-relaxed"><u>A.S.
+                                        Power System</u></a>
+    
+                            </div>
+                        </div>
+                </div>
+
+                <!-- FROM HERE PRODUCT BUY OPTION HTML IS STARTED -->
+
+                <div
+                    class="w-full md:w-3/4 lg:w-1/3 bg-gray-800 rounded-lg p-8 flex flex-col mt-10 md:mt-0 shadow-md">
+                    <div class="flex flex-col text-center w-full mb-4">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-0 text-white"><b>Product Required</b>
+                        </h1>
+                        <div class="flex mt-1 justify-center mb-3">
+                            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                        </div>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-300"><b>Please send us your
+                                details we will call you back</b></p>
+                    </div>
+                    <div>
+                        <!-- UPDATE THE URL FOR THANK YOU PAGE ON FORM SUBMIT -->
+                        <iframe class="hidden" name="hide_iframe" title="hide_iframe" id="hide_iframe"></iframe>
+                        <!-- FORM CODE IS WRITTEN HERE -->
+                        <form class="Productform"
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeofDcBOYaAyxdrnx54j2pw3UaZ6AfnT29HqXcnlIS7mTBRKg/formResponse"
+                            target="hide_iframe" name="productform" method="post" onerror="productError()">
+
+                            <div class="relative mb-4">
+                                <label for="name" class="leading-7 text-sm text-gray-300 mb-1"><b>Name</b></label>
+                                <input type="text" id="name" name="entry.404578411" placeholder="Enter your Full Name"
+                                    pattern="/^[a-zA-Z- ]{1, 40}$/"
+                                    title="First letter must be Uppercase and then lowercase Ex: Mathur "
+                                    class="w-full bg-gray-500 bg-opacity-40 rounded border border-gray-500 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                            </div>
+                            <div class="relative mb-4">
+                                <label for="email" class="leading-7 text-sm text-gray-300"><b>Email</b></label>
+                                <input type="email" id="email" name="entry.1776998207"
+                                    placeholder="Ex: abcd1234@gmail.com"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Format: abcd1234@gmail.com"
+                                    class="w-full bg-gray-500 bg-opacity-40 rounded border border-gray-500 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                            </div>
+                            <div class="relative mb-4">
+                                <label for="phone" class="leading-7 text-sm text-gray-300 mb-1"><b>Phone
+                                        Number</b></label>
+                                <input type="tel" id="tel" name="entry.1891060949" placeholder="Ex: +91-1234567688"
+                                    pattern="^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[+\s.-]?\d{4}$"
+                                    list="countrycode"
+                                    class="w-full bg-gray-500 bg-opacity-40 rounded border border-gray-500 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                                <datalist id="countrycode">
+                                    <option data-countryCode="US" value="+1" selected>USA (+1)</option>
+                                    <option data-countryCode="GB" value="+44">UK (+44)</option>
+
+                                    <option disabled="disabled">Other Countries</option>
+                                    <option data-countryCode="AI" value="+1264">Anguilla (+1264)</option>
+                                    <option data-countryCode="DZ" value="+213">Algeria (+213)</option>
+                                    <option data-countryCode="AD" value="+376">Andorra (+376)</option>
+                                    <option data-countryCode="AO" value="+244">Angola (+244)</option>
+                                    <option data-countryCode="AG" value="+1268">Antigua &amp; Barbuda (+1268)</option>
+                                    <option data-countryCode="AR" value="+54">Argentina (+54)</option>
+                                    <option data-countryCode="AM" value="+374">Armenia (+374)</option>
+                                    <option data-countryCode="AW" value="+297">Aruba (+297)</option>
+                                    <option data-countryCode="AU" value="+61">Australia (+61)</option>
+                                    <option data-countryCode="AT" value="+43">Austria (+43)</option>
+                                    <option data-countryCode="AZ" value="+994">Azerbaijan (+994)</option>
+                                    <option data-countryCode="BS" value="+1242">Bahamas (+1242)</option>
+                                    <option data-countryCode="BH" value="+973">Bahrain (+973)</option>
+                                    <option data-countryCode="BD" value="+880">Bangladesh (+880)</option>
+                                    <option data-countryCode="BB" value="+1246">Barbados (+1246)</option>
+                                    <option data-countryCode="BY" value="+375">Belarus (+375)</option>
+                                    <option data-countryCode="BE" value="+32">Belgium (+32)</option>
+                                    <option data-countryCode="BZ" value="+501">Belize (+501)</option>
+                                    <option data-countryCode="BJ" value="+229">Benin (+229)</option>
+                                    <option data-countryCode="BM" value="+1441">Bermuda (+1441)</option>
+                                    <option data-countryCode="BT" value="+975">Bhutan (+975)</option>
+                                    <option data-countryCode="BO" value="+591">Bolivia (+591)</option>
+                                    <option data-countryCode="BA" value="+387">Bosnia Herzegovina (+387)</option>
+                                    <option data-countryCode="BW" value="+267">Botswana (+267)</option>
+                                    <option data-countryCode="BR" value="+55">Brazil (+55)</option>
+                                    <option data-countryCode="BN" value="+673">Brunei (+673)</option>
+                                    <option data-countryCode="BG" value="+359">Bulgaria (+359)</option>
+                                    <option data-countryCode="BF" value="+226">Burkina Faso (+226)</option>
+                                    <option data-countryCode="BI" value="+257">Burundi (+257)</option>
+                                    <option data-countryCode="KH" value="+855">Cambodia (+855)</option>
+                                    <option data-countryCode="CM" value="+237">Cameroon (+237)</option>
+                                    <option data-countryCode="CA" value="+1">Canada (+1)</option>
+                                    <option data-countryCode="CV" value="+238">Cape Verde Islands (+238)</option>
+                                    <option data-countryCode="KY" value="+1345">Cayman Islands (+1345)</option>
+                                    <option data-countryCode="CF" value="+236">Central African Republic (+236)</option>
+                                    <option data-countryCode="CL" value="+56">Chile (+56)</option>
+                                    <option data-countryCode="CN" value="+86">China (+86)</option>
+                                    <option data-countryCode="CO" value="+57">Colombia (+57)</option>
+                                    <option data-countryCode="KM" value="+269">Comoros (+269)</option>
+                                    <option data-countryCode="CG" value="+242">Congo (+242)</option>
+                                    <option data-countryCode="CK" value="+682">Cook Islands (+682)</option>
+                                    <option data-countryCode="CR" value="+506">Costa Rica (+506)</option>
+                                    <option data-countryCode="HR" value="+385">Croatia (+385)</option>
+                                    <!-- <option data-countryCode="CU" value="53">Cuba (+53)</option> -->
+                                    <option data-countryCode="CY" value="+90">Cyprus - North (+90)</option>
+                                    <option data-countryCode="CY" value="+357">Cyprus - South (+357)</option>
+                                    <option data-countryCode="CZ" value="+420">Czech Republic (+420)</option>
+                                    <option data-countryCode="DK" value="+45">Denmark (+45)</option>
+                                    <option data-countryCode="DJ" value="+253">Djibouti (+253)</option>
+                                    <option data-countryCode="DM" value="+1809">Dominica (+1809)</option>
+                                    <option data-countryCode="DO" value="+1809">Dominican Republic (+1809)</option>
+                                    <option data-countryCode="EC" value="+593">Ecuador (+593)</option>
+                                    <option data-countryCode="EG" value="+20">Egypt (+20)</option>
+                                    <option data-countryCode="SV" value="+503">El Salvador (+503)</option>
+                                    <option data-countryCode="GQ" value="+240">Equatorial Guinea (+240)</option>
+                                    <option data-countryCode="ER" value="+291">Eritrea (+291)</option>
+                                    <option data-countryCode="EE" value="+372">Estonia (+372)</option>
+                                    <option data-countryCode="ET" value="+251">Ethiopia (+251)</option>
+                                    <option data-countryCode="FK" value="+500">Falkland Islands (+500)</option>
+                                    <option data-countryCode="FO" value="+298">Faroe Islands (+298)</option>
+                                    <option data-countryCode="FJ" value="+679">Fiji (+679)</option>
+                                    <option data-countryCode="FI" value="+358">Finland (+358)</option>
+                                    <option data-countryCode="FR" value="+33">France (+33)</option>
+                                    <option data-countryCode="GF" value="+594">French Guiana (+594)</option>
+                                    <option data-countryCode="PF" value="+689">French Polynesia (+689)</option>
+                                    <option data-countryCode="GA" value="+241">Gabon (+241)</option>
+                                    <option data-countryCode="GM" value="+220">Gambia (+220)</option>
+                                    <option data-countryCode="GE" value="+7880">Georgia (+7880)</option>
+                                    <option data-countryCode="DE" value="+49">Germany (+49)</option>
+                                    <option data-countryCode="GH" value="+233">Ghana (+233)</option>
+                                    <option data-countryCode="GI" value="+350">Gibraltar (+350)</option>
+                                    <option data-countryCode="GR" value="+30">Greece (+30)</option>
+                                    <option data-countryCode="GL" value="+299">Greenland (+299)</option>
+                                    <option data-countryCode="GD" value="+1473">Grenada (+1473)</option>
+                                    <option data-countryCode="GP" value="+590">Guadeloupe (+590)</option>
+                                    <option data-countryCode="GU" value="+671">Guam (+671)</option>
+                                    <option data-countryCode="GT" value="+502">Guatemala (+502)</option>
+                                    <option data-countryCode="GN" value="+224">Guinea (+224)</option>
+                                    <option data-countryCode="GW" value="+245">Guinea - Bissau (+245)</option>
+                                    <option data-countryCode="GY" value="+592">Guyana (+592)</option>
+                                    <option data-countryCode="HT" value="+509">Haiti (+509)</option>
+                                    <option data-countryCode="HN" value="+504">Honduras (+504)</option>
+                                    <option data-countryCode="HK" value="+852">Hong Kong (+852)</option>
+                                    <option data-countryCode="HU" value="+36">Hungary (+36)</option>
+                                    <option data-countryCode="IS" value="+354">Iceland (+354)</option>
+                                    <option data-countryCode="IN" value="+91">India (+91)</option>
+                                    <option data-countryCode="ID" value="+62">Indonesia (+62)</option>
+                                    <option data-countryCode="IQ" value="+964">Iraq (+964)</option>
+                                    <!-- <option data-countryCode="IR" value="98">Iran (+98)</option> -->
+                                    <option data-countryCode="IE" value="+353">Ireland (+353)</option>
+                                    <option data-countryCode="IL" value="+972">Israel (+972)</option>
+                                    <option data-countryCode="IT" value="+39">Italy (+39)</option>
+                                    <option data-countryCode="JM" value="+1876">Jamaica (+1876)</option>
+                                    <option data-countryCode="JP" value="+81">Japan (+81)</option>
+                                    <option data-countryCode="JO" value="+962">Jordan (+962)</option>
+                                    <option data-countryCode="KZ" value="+7">Kazakhstan (+7)</option>
+                                    <option data-countryCode="KE" value="+254">Kenya (+254)</option>
+                                    <option data-countryCode="KI" value="+686">Kiribati (+686)</option>
+                                    <!-- <option data-countryCode="KP" value="850">Korea - North (+850)</option> -->
+                                    <option data-countryCode="KR" value="+82">Korea - South (+82)</option>
+                                    <option data-countryCode="KW" value="+965">Kuwait (+965)</option>
+                                    <option data-countryCode="KG" value="+996">Kyrgyzstan (+996)</option>
+                                    <option data-countryCode="LA" value="+856">Laos (+856)</option>
+                                    <option data-countryCode="LV" value="+371">Latvia (+371)</option>
+                                    <option data-countryCode="LB" value="+961">Lebanon (+961)</option>
+                                    <option data-countryCode="LS" value="+266">Lesotho (+266)</option>
+                                    <option data-countryCode="LR" value="+231">Liberia (+231)</option>
+                                    <option data-countryCode="LY" value="+218">Libya (+218)</option>
+                                    <option data-countryCode="LI" value="+417">Liechtenstein (+417)</option>
+                                    <option data-countryCode="LT" value="+370">Lithuania (+370)</option>
+                                    <option data-countryCode="LU" value="+352">Luxembourg (+352)</option>
+                                    <option data-countryCode="MO" value="+853">Macao (+853)</option>
+                                    <option data-countryCode="MK" value="+389">Macedonia (+389)</option>
+                                    <option data-countryCode="MG" value="+261">Madagascar (+261)</option>
+                                    <option data-countryCode="MW" value="+265">Malawi (+265)</option>
+                                    <option data-countryCode="MY" value="+60">Malaysia (+60)</option>
+                                    <option data-countryCode="MV" value="+960">Maldives (+960)</option>
+                                    <option data-countryCode="ML" value="+223">Mali (+223)</option>
+                                    <option data-countryCode="MT" value="+356">Malta (+356)</option>
+                                    <option data-countryCode="MH" value="+692">Marshall Islands (+692)</option>
+                                    <option data-countryCode="MQ" value="+596">Martinique (+596)</option>
+                                    <option data-countryCode="MR" value="+222">Mauritania (+222)</option>
+                                    <option data-countryCode="YT" value="+269">Mayotte (+269)</option>
+                                    <option data-countryCode="MX" value="+52">Mexico (+52)</option>
+                                    <option data-countryCode="FM" value="+691">Micronesia (+691)</option>
+                                    <option data-countryCode="MD" value="+373">Moldova (+373)</option>
+                                    <option data-countryCode="MC" value="+377">Monaco (+377)</option>
+                                    <option data-countryCode="MN" value="+976">Mongolia (+976)</option>
+                                    <option data-countryCode="MS" value="+1664">Montserrat (+1664)</option>
+                                    <option data-countryCode="MA" value="+212">Morocco (+212)</option>
+                                    <option data-countryCode="MZ" value="+258">Mozambique (+258)</option>
+                                    <option data-countryCode="MN" value="+95">Myanmar (+95)</option>
+                                    <option data-countryCode="NA" value="+264">Namibia (+264)</option>
+                                    <option data-countryCode="NR" value="+674">Nauru (+674)</option>
+                                    <option data-countryCode="NP" value="+977">Nepal (+977)</option>
+                                    <option data-countryCode="NL" value="+31">Netherlands (+31)</option>
+                                    <option data-countryCode="NC" value="+687">New Caledonia (+687)</option>
+                                    <option data-countryCode="NZ" value="+64">New Zealand (+64)</option>
+                                    <option data-countryCode="NI" value="+505">Nicaragua (+505)</option>
+                                    <option data-countryCode="NE" value="+227">Niger (+227)</option>
+                                    <option data-countryCode="NG" value="+234">Nigeria (+234)</option>
+                                    <option data-countryCode="NU" value="+683">Niue (+683)</option>
+                                    <option data-countryCode="NF" value="+672">Norfolk Islands (+672)</option>
+                                    <option data-countryCode="NP" value="+670">Northern Marianas (+670)</option>
+                                    <option data-countryCode="NO" value="+47">Norway (+47)</option>
+                                    <option data-countryCode="OM" value="+968">Oman (+968)</option>
+                                    <option data-countryCode="PK" value="+92">Pakistan (+92)</option>
+                                    <option data-countryCode="PW" value="+680">Palau (+680)</option>
+                                    <option data-countryCode="PA" value="+507">Panama (+507)</option>
+                                    <option data-countryCode="PG" value="+675">Papua New Guinea (+675)</option>
+                                    <option data-countryCode="PY" value="+595">Paraguay (+595)</option>
+                                    <option data-countryCode="PE" value="+51">Peru (+51)</option>
+                                    <option data-countryCode="PH" value="+63">Philippines (+63)</option>
+                                    <option data-countryCode="PL" value="+48">Poland (+48)</option>
+                                    <option data-countryCode="PT" value="+351">Portugal (+351)</option>
+                                    <option data-countryCode="PR" value="+1787">Puerto Rico (+1787)</option>
+                                    <option data-countryCode="QA" value="+974">Qatar (+974)</option>
+                                    <option data-countryCode="RE" value="+262">Reunion (+262)</option>
+                                    <option data-countryCode="RO" value="+40">Romania (+40)</option>
+                                    <option data-countryCode="RU" value="+7">Russia (+7)</option>
+                                    <option data-countryCode="RW" value="+250">Rwanda (+250)</option>
+                                    <option data-countryCode="SM" value="+378">San Marino (+378)</option>
+                                    <option data-countryCode="ST" value="+239">Sao Tome &amp; Principe (+239)</option>
+                                    <option data-countryCode="SA" value="+966">Saudi Arabia (+966)</option>
+                                    <option data-countryCode="SN" value="+221">Senegal (+221)</option>
+                                    <option data-countryCode="CS" value="+381">Serbia (+381)</option>
+                                    <option data-countryCode="SC" value="+248">Seychelles (+248)</option>
+                                    <option data-countryCode="SL" value="+232">Sierra Leone (+232)</option>
+                                    <option data-countryCode="SG" value="+65">Singapore (+65)</option>
+                                    <option data-countryCode="SK" value="+421">Slovak Republic (+421)</option>
+                                    <option data-countryCode="SI" value="+386">Slovenia (+386)</option>
+                                    <option data-countryCode="SB" value="+677">Solomon Islands (+677)</option>
+                                    <option data-countryCode="SO" value="+252">Somalia (+252)</option>
+                                    <option data-countryCode="ZA" value="+27">South Africa (+27)</option>
+                                    <option data-countryCode="ES" value="+34">Spain (+34)</option>
+                                    <option data-countryCode="LK" value="+94">Sri Lanka (+94)</option>
+                                    <option data-countryCode="SH" value="+290">St. Helena (+290)</option>
+                                    <option data-countryCode="KN" value="+1869">St. Kitts (+1869)</option>
+                                    <option data-countryCode="SC" value="+1758">St. Lucia (+1758)</option>
+                                    <option data-countryCode="SR" value="+597">Suriname (+597)</option>
+                                    <option data-countryCode="SD" value="+249">Sudan (+249)</option>
+                                    <option data-countryCode="SZ" value="+268">Swaziland (+268)</option>
+                                    <option data-countryCode="SE" value="+46">Sweden (+46)</option>
+                                    <option data-countryCode="CH" value="+41">Switzerland (+41)</option>
+                                    <!-- <option data-countryCode="SY" value="963">Syria (+963)</option> -->
+                                    <option data-countryCode="TW" value="+886">Taiwan (+886)</option>
+                                    <option data-countryCode="TJ" value="+992">Tajikistan (+992)</option>
+                                    <option data-countryCode="TH" value="+66">Thailand (+66)</option>
+                                    <option data-countryCode="TG" value="+228">Togo (+228)</option>
+                                    <option data-countryCode="TO" value="+676">Tonga (+676)</option>
+                                    <option data-countryCode="TT" value="+1868">Trinidad &amp; Tobago (+1868)</option>
+                                    <option data-countryCode="TN" value="+216">Tunisia (+216)</option>
+                                    <option data-countryCode="TR" value="+90">Turkey (+90)</option>
+                                    <option data-countryCode="TM" value="+993">Turkmenistan (+993)</option>
+                                    <option data-countryCode="TC" value="+1649">Turks &amp; Caicos Islands (+1649)
+                                    </option>
+                                    <option data-countryCode="TV" value="+688">Tuvalu (+688)</option>
+                                    <option data-countryCode="UG" value="+256">Uganda (+256)</option>
+                                    <option data-countryCode="UA" value="+380">Ukraine (+380)</option>
+                                    <option data-countryCode="AE" value="+971">United Arab Emirates (+971)</option>
+                                    <option data-countryCode="UY" value="+598">Uruguay (+598)</option>
+                                    <option data-countryCode="UZ" value="+998">Uzbekistan (+998)</option>
+                                    <option data-countryCode="VU" value="+678">Vanuatu (+678)</option>
+                                    <option data-countryCode="VA" value="+379">Vatican City (+379)</option>
+                                    <option data-countryCode="VE" value="+58">Venezuela (+58)</option>
+                                    <option data-countryCode="VN" value="+84">Vietnam (+84)</option>
+                                    <option data-countryCode="VG" value="+1">Virgin Islands - British (+1)</option>
+                                    <option data-countryCode="VI" value="+1">Virgin Islands - US (+1)</option>
+                                    <option data-countryCode="WF" value="+681">Wallis &amp; Futuna (+681)</option>
+                                    <option data-countryCode="YE" value="+969">Yemen (North)(+969)</option>
+                                    <option data-countryCode="YE" value="+967">Yemen (South)(+967)</option>
+                                    <option data-countryCode="ZM" value="+260">Zambia (+260)</option>
+                                    <option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
+                                </datalist>
+                            </div>
+                            <div class="relative mb-4">
+                                <label for="product" class="leading-7 text-sm text-gray-300"><b>Product Name</b></label>
+                                <textarea id="product" name="entry.774796024"
+                                    placeholder="Provide Verified Product Name"
+                                    class="w-full bg-gray-500 bg-opacity-40 rounded border border-gray-500 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    required></textarea>
+                            </div>
+                            <div class="button-area flex justify-center">
+                                <button
+                                    class="inline-flex m-[5px] text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                                    type="submit" onclick="sendForm()"><b>SEND</b></button>
+                                <button
+                                    class="inline-flex m-[5px] text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
+                                    type="reset" onclick="resetProduct()"><b>RESET</b></button>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-xs text-gray-300 leading-relaxed"><b>Please give as correct details about
+                                        required products</b></p>
+                            </div>
+                            <div class="flex flex-col text-center w-full mb-4">
+                                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"><b>OR</b></h1>
+                                <div class="flex justify-center">
+                                    <button type="button" onclick="window.location.href = 'tel:+91-'"
+                                        class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-md mb-2"><b>Call
+                                            Us</b></button>
+                                </div>
+                                <p class="leading-relaxed text-gray-300 text-sm"><b>NOTE&#58; </b>Dial extra <b>762</b>
+                                    when connected </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+        <!-- FROM HERE THE FEEDBACK STARTED -->
+
+        <section class="text-gray-400 bg-gray-900 mb-9">
+            <div class="container px-5 py-19 mx-auto">
+                <div class="flex flex-col text-center w-full mb-10">
+                    <h1 class="text-lg md:text-3xl font-medium title-font text-gray-200 mt-16"><a
+                            name="Feedback"><b>Feedback</b></a></h1>
+                    <div class="flex mt-1 justify-center mb-3">
+                        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                    </div>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base"><b>Please complete the following form and help
+                            us to improve our customer experience.</b></p>
+                </div>
+                <div>
+                    <!-- UPDATE THE URL FOR THANK YOU PAGE ON FORM SUBMIT -->
+                    <iframe class="hidden" title="hide_iframe" name="hidden_iframe" id="hidden_iframe"></iframe>
+                    <!-- FORM CODE IS WRITTEN HERE -->
+                    <form class="Feedbackform"
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSegt_u2VTvxmsc3Ai_0XX6rxEp3XmpuPBg6MkS4yIsfLhpS9w/formResponse"
+                        target="hidden_iframe" name="feedbackform" method="post" onsubmit="onSubmit()">
+
+                        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div class="flex flex-wrap -m-2 justify-center">
+                                <div class="p-2 w-1/2">
+                                    <div class="relative">
+                                        <label for="name" class="leading-7 text-sm text-gray-400"><b>Name</b></label>
+                                        <input type="text" id="name" name="entry.1446745697"
+                                            placeholder="Enter your Full Name" pattern="[A-Za-z]{1,32}"
+                                            title="First letter must be Capital Letter"
+                                            class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="p-2 w-1/2">
+                                    <div class="relative">
+                                        <label for="email" class="leading-7 text-sm text-gray-400"><b>Email</b></label>
+                                        <input type="email" id="email" name="entry.1494536791"
+                                            placeholder="Ex: abcd1234@gmail.com"
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                            title="Format: abcd1234@gmail.com"
+                                            class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="p-2 w-full">
+                                    <div class="relative">
+                                        <label for="message"
+                                            class="leading-7 text-sm text-gray-400"><b>Message</b></label>
+                                        <textarea id="message" name="entry.222502787"
+                                            placeholder="Give your experience here "
+                                            class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="button-area flex justify-center">
+                                    <button
+                                        class="inline-flex m-[5px] text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                                        type="submit" onclick="submitForm()"><b>SEND</b></button>
+                                    <button
+                                        class="inline-flex m-[5px] text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
+                                        type="submit" onclick="resetForm()"><b>RESET</b></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+            </div>
+        </section>
+
+        <!-- FROM HERE THE FOOTER IS STARTED -->
+
+        <footer class="text-gray-900 bg-gray-900 ">
+            <div class="container px-5 py-8 md:px-10 mx-auto flex items-center sm:flex-row flex-col justify-center">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <svg class="fill-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="46" height="46"
+                        viewBox="0 0 172 172">
+                        <g class="mix-blend-normal" fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                            stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                            text-anchor="none">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <path
+                                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                fill="#9b59b6"></path>
+                            <g fill="#000000">
+                                <path
+                                    d="M76.37294,22.962l10.1428,7.9939l15.9878,-6.01691zM68.98073,24.07943l-22.00471,9.88493l31.88964,-2.1489zM108.00471,29.06487l-14.61251,5.15735l25.35699,11.00236zM115.13905,29.83847l12.11978,18.1367l7.9939,-4.12588zM79.38139,37.31664l-33.26494,2.1489l16.7614,16.50354zM90.12588,38.9498l8.7675,30.77222l22.00471,-17.62096zM84.62471,39.7234l-17.01927,19.25412l25.52891,10.74449zM36.74726,42.81782l-12.63552,23.38001l10.1428,14.52655zM42.24844,43.33355l-2.49272,37.64869l19.25412,-20.88729zM138.77693,48.31899l-9.28324,4.64162l7.13434,26.38847l11.77596,-4.64162zM124.76612,56.22694l-21.14515,16.84736l27.50589,6.27478zM66.23014,64.22084l2.75059,34.98406l23.63788,-23.72383zM60.72896,66.45569l-19.85582,21.40302l22.86427,12.37765zM22.99432,74.10577l2.23485,32.23347l7.9939,-17.36309zM101.38611,78.23165l8.85346,33.35089l20.02773,-26.73229zM96.1428,79.95077l-24.15361,23.89574l33.00707,9.62706zM149.00568,80.46651l-10.74449,4.38375l6.36074,23.38001zM133.61958,89.23401l-18.73839,25.09913l25.01317,-1.97699zM40.87315,94.21945l6.36074,21.74685l14.26868,-10.48662zM35.97366,96.45431l-6.61861,14.01081l12.11978,5.24331zM65.88632,109.34769l-14.52655,10.48662l28.02163,12.03383zM72.76279,109.86343l13.75295,23.72383l16.84736,-14.87037zM29.87079,116.7399l19.51199,21.48898l-5.75905,-15.64398zM141.26965,117.59946l-25.52891,2.23485l15.12824,12.89339zM109.12214,121.20961l-15.12824,13.15125l28.2795,-1.89103zM50.50021,125.59336l5.50118,14.87037l20.62942,-3.86802zM121.49979,138.22888l-30.25648,1.89103l6.01691,7.9939zM84.88257,140.7216l-22.26258,4.12588l28.36545,3.86802z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="ml-3 text-xl text-gray-200">A.S. Power System</span>
+                </a>
+                <p class="text-sm text-gray-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    <b>Powered By &#9866;</b>
+                    <a href="https://twitter.com/knyttneve" class="text-gray-300 ml-1" rel="noopener noreferrer"
+                        target="_blank">@aspowersystem2017</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-300">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-300">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-300">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-300">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+        <!--HERE THE JAVASCRIPT IS GIVEN -->
+        <script src="script.js"></script>
+</body>
+
+</html>
