@@ -25,16 +25,15 @@
       }
   
       //Here the page loading div script is GIVEN
-      // document.onreadystatechange = function() {
-      //   if (document.readyState !== "complete") {
-      //     document.querySelector(
-      //       "body").style.visibility = "hidden";
-      //     document.querySelector(
-      //       "#loader").style.visibility = "visible";
-      //   } else {
-      //     document.querySelector(
-      //       "#loader").style.display = "none";
-      //     document.querySelector(
-      //       "body").style.visibility = "visible";
-      //   }
-      // };
+      document.querySelector("body").style.transition = "visibility 0.5s";
+      document.querySelector("#loader").style.transition = "visibility 0.5s";
+
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loader").style.visibility = "visible";
+        } else {
+          document.querySelector("#loader").style.visibility = "hidden";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
