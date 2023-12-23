@@ -38,3 +38,21 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    var submitted = false;
+
+
+    function showConfirmationMessage() {
+      // Show the confirmation message
+      document.getElementById("confirmationMsg").setAttribute("class", "flex justify-center items-center");
+      // Reset the form
+      document.getElementById('myForm').reset();
+    }
+
+
+    function showFeedbackMessage() {
+      // Show the confirmation message
+      document.getElementById("FeedbackMsg").setAttribute("class", "flex justify-center items-center");
+      // Reset the form
+      document.getElementById('Feedbackform').reset();
+    }
